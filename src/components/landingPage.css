@@ -1,0 +1,186 @@
+.landing-page {
+    background-image: url(/Users/macbookair/Documents/portfolio/src/images/desktop-wallpaper-portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 92.32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    overflow: hidden;
+    transition: background-image 0.5s;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.profile-container {
+    transition: flex 0.5s;
+}
+
+.left-content {
+    margin-right: 50px;
+}
+
+.profile-photo {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: width 0.5s, height 0.5s, border-radius 0.5s, transform 0.5s;
+}
+
+.profile-photo.large {
+    width: 300px; /* Adjust size as needed */
+    height: 300px; /* Adjust size as needed */
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.profile-photo.small {
+    width: 200px; /* Adjust size as needed */
+    height: 200px; /* Adjust size as needed */
+    border-radius: 0;
+}
+
+.right-content {
+    text-align: left;
+    opacity: 0; /* Initially hide content */
+    transition: opacity 0.5s ease;
+    margin-top: -20px;
+}
+
+.expanded .right-content {
+    opacity: 1; /* Show content when expanded */
+}
+
+.name {
+    font-size: 36px;
+    color: #ffffff; /* White text color */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent white background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: -1px;
+}
+
+.description {
+    font-size: 18px;
+    color: #eeeeee; /* Light gray text color */
+    background-color: rgba(0, 0, 0, 0.4); /* Slightly transparent white background */
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    max-width: 600px;
+    margin-bottom: -1px;
+}
+
+.link{
+    color: #ffffff;
+}
+
+.profileIcon{
+    height: 40px;
+    width: 40px;
+    margin-bottom: -6px;
+    margin-right: 10px;
+}
+
+.smallIcon{
+    margin: -3px;
+    margin-right: 1px;
+    margin-left: 1px;
+    height: 18px;
+    width: 18px;
+}
+
+.breadcrumbs-container {
+    display: flex;
+    align-items: center;
+    background-color: #f5f5f563;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+  }
+  
+  .breadcrumb {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #555;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .breadcrumb:hover {
+    background-color: #4c60af;
+    color: #fff;
+  }
+  
+  .active {
+    background-color: #0044ff;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .breadcrumb-divider {
+    margin: 0 5px;
+    color: #aaa;
+  }  
+  
+  .toggle-container {
+    position: fixed; /* Ensure the container acts as a reference for absolute positioning */
+    perspective: 1000px;
+    width: 100px; /* Adjust width and height of the container as needed */
+    height: 50px;
+    left: 65px
+  }
+  
+  .toggle-input {
+    display: none;
+  }
+  
+  .toggle-btn {
+    position: absolute; /* Position the button relative to the container */
+    top: 0; /* Position at the top */
+    left: 0; /* Position at the left */
+    width: 40px; /* Adjust width and height of the button as needed */
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .toggle-btn::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s ease;
+    transform: translateX(0px);
+  }
+  
+  .toggle-input:checked + .toggle-btn {
+    background-color: #63d69e;
+  }
+  
+  .toggle-input:checked + .toggle-btn::before {
+    transform: translateX(20px);
+  }
+
+  .quote-block {
+    background-color: #d4e9f4;
+    padding-right: 10px;
+  }
+  
+  

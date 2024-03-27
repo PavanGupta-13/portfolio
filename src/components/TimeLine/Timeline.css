@@ -1,0 +1,87 @@
+/* Timeline.css */
+
+.header{
+    display: flex;
+    flex-direction:column;
+    margin-top: -200px;
+}
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-start;
+  /* margin-top: 150px; */
+  padding: 20px;
+  width: 90vw;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  );
+  border-radius: 5px;
+}
+
+.timeline-event {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.event-marker {
+  width: 90%;
+  height: 90%;
+  background-color: #ff0000;
+  /* border-radius: 50%; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.event-marker:hover {
+    background-color: whitesmoke;
+}
+
+.event-tooltip {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  margin-left: 50%;
+}
+
+.timeline-event:hover .event-tooltip {
+  display: block;
+  position: absolute;
+  bottom: -10px; /* Adjust bottom position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.description {
+  font-size: 18px;
+  color: #eeeeee; /* Light gray text color */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* Slightly transparent white background */
+  padding: 10px;
+  border-radius: 5px;
+  width: 600px;
+  position: relative; /* Change position to relative */
+  margin-top: 10px; /* Add top margin to create space */
+  margin-bottom: -1px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}

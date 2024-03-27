@@ -1,0 +1,30 @@
+.contact{
+    background-image: url(/Users/macbookair/Documents/portfolio/src/images/desktop-wallpaper-portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 92.32vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.header-comp{
+    display: flex;
+    cursor: pointer;
+}
+
+.resumeLink {
+    position: fixed;
+    bottom: 15vh;
+    right: 5vw;
+    background-color: rgba(0, 0, 0, 0.684);
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .quote-block {
+    background-color: #d4e9f4;
+    padding-right: 10px;
+  }

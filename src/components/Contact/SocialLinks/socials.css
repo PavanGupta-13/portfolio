@@ -1,0 +1,24 @@
+.socials-icons{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.smallIcon{
+    width: 50px;
+    height: auto;
+}
+
+.social-icons-dd{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    padding-top: -10px;
+}
+
+.smallIcon-dd{
+    width: 30px;
+    height: auto;
+    padding-left: 10px;
+}

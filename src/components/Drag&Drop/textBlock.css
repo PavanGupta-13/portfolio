@@ -1,0 +1,11 @@
+.text-block {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    cursor: move;
+  }
+  
+  .text-block.dragging {
+    opacity: 0.5;
+  }
+  

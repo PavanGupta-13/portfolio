@@ -1,0 +1,10 @@
+.drop-target {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .drop-target.over {
+    background-color: #f0f0f0;
+  }
+  
